@@ -30,7 +30,7 @@ const Weather = () => {
         "13n" : snow_icon
 
     }
-    const API_ID = "df3a1138ece9cab9537ffc5b34cf474c"
+    const API_ID = process.env.REACT_APP_API_ID
     const search = async (city)=>{
         if(city === ""){
             alert("Enter city name");

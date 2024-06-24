@@ -1,0 +1,100 @@
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-bar input{
+    height: 50px;
+    border : none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 51%;
+    background: #ebfffc;
+    cursor: pointer;
+}
+.weather-icon{
+    width: 150px;
+    margin: 30px 0;
+}
+.temperature{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+.location{
+    color: #fff;
+    font-size: 40px;
+}
+
+.weather-data{
+    width: 100%;
+    margin-top: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.weather-data .col{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 22px;
+}
+.weather-data .col span{
+    display: block;
+    font-size: 15px;
+}
+
+.weather-data .col img{
+    width: 26px;
+    margin-top: 10px;
+}
+
+.suggestions-list {
+    list-style-type: none; 
+    width: 90%; /* Remove default list styling */
+    padding: 0;             /* Remove default padding */
+    margin: 5px 0 0 0;      /* Add margin to the top only */
+    max-height: 200px;      /* Limit the height of the dropdown */
+    overflow-y: auto;       /* Add scrollbar if the list is too long */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px;     /* Round the corners */
+    background-color: #fff; /* White background for the list */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Styles for individual suggestion items */
+.suggestions-list li {
+    padding: 10px;          /* Add padding inside each item */
+    cursor: pointer;        /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for suggestion items */
+.suggestions-list li:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+/* Active suggestion (if needed, e.g., keyboard navigation) */
+.suggestions-list li.active {
+    background-color: #007bff;  /* Blue background for active item */
+    color: #fff;                /* White text for active item */
+}
